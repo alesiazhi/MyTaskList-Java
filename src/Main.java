@@ -28,7 +28,7 @@ public class Main {
 
         myTaskList.addAllTasks(newMyTaskList);
         for (String task: myTaskList.getAllTasks()){
-            System.out.println("Formated: " + task);
+            System.out.println("Formatted: " + task);
         }
     }
 }

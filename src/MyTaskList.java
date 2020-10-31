@@ -41,7 +41,7 @@ public class MyTaskList implements TaskList {
 
     @Override
     public boolean notContainsTask(String task) {
-        return !tasks.contains(task);
+        return !containsTask(task);
     }
 
     @Override

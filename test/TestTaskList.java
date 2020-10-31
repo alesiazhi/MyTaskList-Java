@@ -34,12 +34,20 @@ public class TestTaskList {
     }
 
     @Test
+    public void testGetTask() {
+        TaskList taskList = new MyTaskList();
+        taskList.addTask("Make your bed");
+
+        assertEquals("Make your bed", taskList.getTask(0));
+    }
+
+    @Test
     public void testContainsTask() {
         TaskList taskList = new MyTaskList();
         taskList.addTask("Remove dust");
 
         assertTrue(taskList.containsTask("Remove dust"));
-        assertFalse(taskList.notContainsTask("XXX"));
+        assertTrue(taskList.notContainsTask("XXX"));
     }
 
     @Test
